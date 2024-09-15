@@ -154,7 +154,7 @@ public final class Main extends JavaPlugin {
             lastTagMessage = "&cFailed to check for a new version on spigot.";
         }
         else if (spigotResponse.equals(currentVersion)) {
-            lastTagMessage = "&aYou are running the latest version of AutoCommands " + currentVersion + " !";
+            lastTagMessage = "&aYou are running the latest version of CloudStorage " + currentVersion + " !";
         }
         else {
             lastTagMessage = "&eCloudStorage &a&l" + spigotResponse + " &eis available!";
