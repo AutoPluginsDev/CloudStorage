@@ -40,9 +40,9 @@ public class CommandRunnerHelp implements CommandExecutor, TabCompleter {
             Player player = (Player) sender;
 
             String message =
-                    "§e-----------§aAgalia-Help§e--------------\n"
+                    "§e-----------§aACloudStorage-Help§e--------------\n"
                             + "§6" + ChatColor.translateAlternateColorCodes('&', plugin.VerifyPluginVersion()) + "\n"
-                            + "§6Agalia Version : " + plugin.getDescription().getVersion() + "\n"
+                            + "§6CloudStorage Version : " + plugin.getDescription().getVersion() + "\n"
                             + "§e------------------------------------------\n";
 
             player.sendMessage(message);

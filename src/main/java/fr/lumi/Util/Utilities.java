@@ -34,7 +34,7 @@ public class Utilities {
 
     public String replacePlaceHoldersForPlayer(String s, Player player) {
         s = replacePlaceHolders(s);
-
+        s = s.replace("%player", player.getName());
         s = PapiReplace(player, s);
         return ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Prefix") + s);
     }

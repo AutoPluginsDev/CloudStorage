@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import fr.lumi.Commandes.*;
+import fr.lumi.Inventories.CloudStorage;
 import fr.lumi.Metrics.Metrics;
 import fr.lumi.FileVerifiers.ConfigFileVerification;
 import fr.lumi.FileVerifiers.LangFileVerification;
@@ -37,6 +38,11 @@ public final class Main extends JavaPlugin {
             Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', s));
     }
 
+    private CloudStorage cloudStorage = new CloudStorage(this);
+
+    public CloudStorage getCloudStorage() {
+        return cloudStorage;
+    }
 
     boolean papiPresent = false;
 
@@ -226,6 +232,10 @@ public final class Main extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("cloudstorage")).setExecutor(new CommandRunnerExecute(this));
         Objects.requireNonNull(this.getCommand("csreload")).setExecutor(new CommandRunnerReload(this));
         Objects.requireNonNull(this.getCommand("csTime")).setExecutor(new CommandRunnerTime(this));
+
+        // plugin logic
+
+
 
         return verified;
     }
