@@ -1,11 +1,11 @@
-name: eCloudStorage
+name: CloudStorage
 version: 1.0.0
 main: fr.lumi.Main
 api-version: 1.15
 authors:
   - Lumi_
   - Adi_
-prefix: eCloudStorage 1.0.0
+prefix: CloudStorage 1.0.0
 depends: [PlaceholderAPI]
 permissions:
   agalia.*:
