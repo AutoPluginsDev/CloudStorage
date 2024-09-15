@@ -25,7 +25,7 @@ public class CommandRunnerConf implements CommandExecutor, TabCompleter {
     public List<String> onTabComplete(CommandSender sender, Command cmd, String alias, String[] args) {
         List<String> l = new ArrayList<>();
 
-        if (cmd.getName().equalsIgnoreCase("bpconf")) {
+        if (cmd.getName().equalsIgnoreCase("csconf")) {
             if (sender instanceof Player) {
                 List<String> list = new ArrayList<>();
                 l.add("prefix");

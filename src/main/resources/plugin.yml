@@ -1,11 +1,11 @@
-name: PluginBuildPlate
+name: eCloudStorage
 version: 1.0.0
 main: fr.lumi.Main
 api-version: 1.15
 authors:
   - Lumi_
   - Adi_
-prefix: BuildPlate 1.0.0
+prefix: eCloudStorage 1.0.0
 depends: [PlaceholderAPI]
 permissions:
   agalia.*:
@@ -19,7 +19,7 @@ permissions:
     description: allow to create and manage the commands
 
 commands:
-  bpreload :
+  csreload :
     description:
       reload the Time table of the command execution
       (must be done after every command added)
@@ -27,13 +27,13 @@ commands:
     permission: acmd.reload
     permission-message: Sorry, you dont are not allowed to do this
 
-  bphelp:
+  cshelp:
     description:
       main command of the plugin
     usage:
       Bad usage of this command, please verify your command ID or your syntax.
 
-  bprun:
+  cloudstorage:
     usage:
       Bad usage of this command, please verify your command ID or your syntax.
     description:
@@ -41,7 +41,7 @@ commands:
     permission: acmd.admin
     permission-message: Sorry, you dont are not allowed to do this
 
-  bpTime:
+  csTime:
     usage:
       Bad usage of this command, please verify your command ID or your syntax.
     description:

@@ -1,5 +1,5 @@
 #RELOAD THE SERVER TO SAVE THE CONFIG.
 ConfigVersion : 1 # MODIFY THIS LINE ONLY IF YOU KNOW WHAT YOU ARE DOING (eg : if you want to update the config to the last version)
 LangFileVersion : 1 # MODIFY THIS LINE ONLY IF YOU KNOW WHAT YOU ARE DOING (eg : if you want to update the lang file to the last version)
-ConsolePrefix : '&eBp |'
-Prefix : '&abp | '
+ConsolePrefix : '&eCloudStorage |'
+Prefix : '&aeCloudStorage | '

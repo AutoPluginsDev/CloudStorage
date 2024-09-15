@@ -1,16 +1,13 @@
-# AutoCommands 🤖
+# CloudStorage 🤖
 
 ## Preview
 
 
 ## Spigot 🔗
->Download the ressource via spigot page :
-https://www.spigotmc.org/resources/acmd-%E2%8F%B0-%E2%8F%B3-autocommands-1-13-1-20-4.100090/
-Don't hesitate to leave a review if you liked it !
+
 
 ## bStat 🔗
 This plugin use bStat to better understand server administrator usage. You can disable it in your server options.
->https://bstats.org/plugin/bukkit/ACMD/21737
 
 ## Wiki 🔗
 Please read it first before open an issue. 🪲

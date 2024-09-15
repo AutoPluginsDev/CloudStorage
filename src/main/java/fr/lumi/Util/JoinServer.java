@@ -1,6 +1,7 @@
 package fr.lumi.Util;
 
 import fr.lumi.Main;
+import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -22,7 +23,8 @@ public class JoinServer implements Listener {
             // Todo
             // if (plugin.getConfig().getBoolean("CheckVersion"))
             if (Main.isNewVersionAvailable())
-                player.sendMessage(plugin.VerifyPluginVersion());
+                player.sendMessage(ChatColor.translateAlternateColorCodes(
+                        '&',plugin.VerifyPluginVersion()));
 
         }
     }

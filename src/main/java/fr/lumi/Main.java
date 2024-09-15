@@ -27,7 +27,7 @@ public final class Main extends JavaPlugin {
 
     private final String[] Logo = {
             "&e&9     &6__     __ &e ",
-            "&e&9 /\\ &6/  |\\/||  \\&e|  &9Agalia &aVersion &e" + this.getDescription().getVersion(),
+            "&e&9 /\\ &6/  |\\/||  \\&e|  &9CloudStorage &aVersion &e" + this.getDescription().getVersion(),
             "&e&9/--\\&6\\__|  ||__/&e|  &8running on bukkit - paper",
             ""};
 
@@ -156,7 +156,7 @@ public final class Main extends JavaPlugin {
             lastTagMessage = "&aYou are running the latest version of AutoCommands " + currentVersion + " !";
         }
         else {
-            lastTagMessage = "&eAutoCommands &a&l" + spigotResponse + " &eis available! &chttps://www.spigotmc.org/resources/acmd-%E2%8F%B0-%E2%8F%B3-autocommands-1-13-1-20-4.100090";
+            lastTagMessage = "&eCloudStorage &a&l" + spigotResponse + " &eis available!";
         }
         return lastTagMessage;
     }
@@ -221,10 +221,10 @@ public final class Main extends JavaPlugin {
 
         reloadConfig();
         config = getConfig();
-        Objects.requireNonNull(this.getCommand("bphelp")).setExecutor(new CommandRunnerHelp(this));
-        Objects.requireNonNull(this.getCommand("bprun")).setExecutor(new CommandRunnerExecute(this));
-        Objects.requireNonNull(this.getCommand("bpreload")).setExecutor(new CommandRunnerReload(this));
-        Objects.requireNonNull(this.getCommand("bpTime")).setExecutor(new CommandRunnerTime(this));
+        Objects.requireNonNull(this.getCommand("cshelp")).setExecutor(new CommandRunnerHelp(this));
+        Objects.requireNonNull(this.getCommand("cloudstorage")).setExecutor(new CommandRunnerExecute(this));
+        Objects.requireNonNull(this.getCommand("csreload")).setExecutor(new CommandRunnerReload(this));
+        Objects.requireNonNull(this.getCommand("csTime")).setExecutor(new CommandRunnerTime(this));
 
         return verified;
     }

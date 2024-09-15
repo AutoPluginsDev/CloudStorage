@@ -26,7 +26,7 @@ public class CommandRunnerExecute implements CommandExecutor, TabCompleter {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage(plugin.getUt().replacePlaceHoldersForPlayerPlgVar("Hello, Agalia !"));
+            sender.sendMessage(plugin.getUt().replacePlaceHoldersForPlayerPlgVar("Hello, Agalia ! I'm cloudstorage"));
             return true;
         }
         return true;
