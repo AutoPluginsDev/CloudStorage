@@ -26,9 +26,10 @@ import java.util.Objects;
 public final class Main extends JavaPlugin {
 
     private final String[] Logo = {
-            "&e&9     &6__     __ &e ",
-            "&e&9 /\\ &6/  |\\/||  \\&e|  &9CloudStorage &aVersion &e" + this.getDescription().getVersion(),
-            "&e&9/--\\&6\\__|  ||__/&e|  &8running on bukkit - paper",
+            "&e&9  ___  ___ ",
+            "&e&9 / __)/ __)",
+            "&e&9( (__ \\__ \\ &9CloudStorage &aVersion &e" + this.getDescription().getVersion(),
+            "&e&9 \\___)(___/ &8running on bukkit - paper",
             ""};
 
     private void printLogo() {
